@@ -1,0 +1,4 @@
+/target/
+*.log
+suit-build.log
+assets/icons/de.iterathor.suit.gtk.png

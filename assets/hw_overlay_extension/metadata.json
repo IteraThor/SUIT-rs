@@ -1,0 +1,15 @@
+{
+  "name": "SUIT Hardware Overlay",
+  "description": "Shows CPU, temperature, memory, disk, network and Autodarts camera FPS, with optional Autodarts control buttons, on the desktop wallpaper.",
+  "uuid": "hw-overlay@suit",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51"
+  ],
+  "version": 4
+}

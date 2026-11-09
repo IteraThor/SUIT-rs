@@ -1,0 +1,151 @@
+/* Sizes are in em so the size class on .suit-hwmon scales the whole overlay.
+   No letter-spacing: St leaves it out of a label's natural width, so labels in a row get ellipsized. */
+.suit-hwmon {
+  width: 19em;
+  spacing: 0.45em;
+  color: #eceff4;
+  font-feature-settings: "tnum";
+}
+
+.suit-hwmon-small { font-size: 8.5pt; }
+.suit-hwmon-medium { font-size: 10pt; }
+.suit-hwmon-large { font-size: 12pt; }
+
+/* background-color (with the chosen opacity) is set inline by the extension */
+.suit-hwmon-card {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1.2em;
+  padding: 1.1em 1.25em;
+  box-shadow: 0 0.3em 1.2em rgba(0, 0, 0, 0.35);
+}
+
+.suit-hwmon-minimal {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+}
+
+.suit-hwmon-heading {
+  font-size: 0.72em;
+  font-weight: bold;
+  color: rgba(236, 239, 244, 0.45);
+}
+
+.suit-hwmon-line { spacing: 0.5em; }
+.suit-hwmon-item { spacing: 0.3em; }
+
+.suit-hwmon-key {
+  font-size: 0.78em;
+  font-weight: bold;
+  color: rgba(236, 239, 244, 0.55);
+}
+
+.suit-hwmon-value { font-weight: bold; }
+
+.suit-hwmon-detail {
+  font-size: 0.85em;
+  color: rgba(236, 239, 244, 0.5);
+}
+
+.suit-hwmon-bar {
+  height: 3px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.suit-hwmon-fill {
+  height: 3px;
+  border-radius: 2px;
+}
+
+.suit-hwmon-sep {
+  height: 1px;
+  margin: 0.4em 0;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.suit-hwmon-pill {
+  font-size: 0.72em;
+  font-weight: bold;
+  padding: 0.2em 0.7em;
+  border-radius: 1em;
+  background-color: rgba(236, 239, 244, 0.08);
+}
+
+.suit-hwmon-hero { spacing: 0.3em; }
+
+.suit-hwmon-hero-value {
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+.suit-hwmon-hero-unit {
+  padding-bottom: 0.35em;
+  color: rgba(236, 239, 244, 0.5);
+}
+
+.suit-hwmon-cams { spacing: 0.45em; }
+
+.suit-hwmon-cam {
+  padding: 0.35em 0;
+  border-radius: 0.6em;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.suit-hwmon-cam-fps {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.suit-hwmon-cam-name {
+  font-size: 0.65em;
+  font-weight: bold;
+  color: rgba(236, 239, 244, 0.45);
+}
+
+.suit-hwmon-dim { color: rgba(236, 239, 244, 0.45); }
+.suit-hwmon-ok { color: #a3be8c; }
+.suit-hwmon-warn { color: #ebcb8b; }
+.suit-hwmon-bad { color: #bf616a; }
+
+.suit-hwmon-pill.suit-hwmon-ok { background-color: rgba(163, 190, 140, 0.16); }
+.suit-hwmon-pill.suit-hwmon-warn { background-color: rgba(235, 203, 139, 0.16); }
+.suit-hwmon-pill.suit-hwmon-bad { background-color: rgba(191, 97, 106, 0.2); }
+
+.suit-hwmon-fill.suit-hwmon-warn { background-color: #ebcb8b; }
+.suit-hwmon-fill.suit-hwmon-bad { background-color: #bf616a; }
+
+.suit-hwmon-buttons { spacing: 0.45em; margin-top: 0.2em; }
+
+.suit-hwmon-btn {
+  font-size: 0.85em;
+  font-weight: bold;
+  padding: 0.5em 0.6em;
+  border-radius: 0.7em;
+  text-align: center;
+  color: #eceff4;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+.suit-hwmon-btn:hover { background-color: rgba(255, 255, 255, 0.18); }
+.suit-hwmon-btn:active { background-color: rgba(255, 255, 255, 0.26); }
+.suit-hwmon-btn.suit-hwmon-dim { color: rgba(236, 239, 244, 0.35); }
+
+/* "Color Action Buttons" in the Look tab */
+.suit-hwmon-btn-start { color: #2e3440; background-color: #a3be8c; }
+.suit-hwmon-btn-start:hover { background-color: #b4cb9f; }
+.suit-hwmon-btn-start:active { background-color: #93ae7c; }
+.suit-hwmon-btn-stop { color: #eceff4; background-color: #bf616a; }
+.suit-hwmon-btn-stop:hover { background-color: #cb767e; }
+.suit-hwmon-btn-stop:active { background-color: #ad525b; }
+.suit-hwmon-btn-reset { color: #2e3440; background-color: #ebcb8b; }
+.suit-hwmon-btn-reset:hover { background-color: #f1d9a4; }
+.suit-hwmon-btn-reset:active { background-color: #e3bf78; }
+.suit-hwmon-btn-debug { color: #eceff4; background-color: #5e81ac; }
+.suit-hwmon-btn-debug:hover { background-color: #7192bb; }
+.suit-hwmon-btn-debug:active { background-color: #4f729c; }
+
+/* Appears only while Autodarts reports a newer release */
+.suit-hwmon-btn-update {
+  color: #2e3440;
+  background-color: #ebcb8b;
+}
+.suit-hwmon-btn-update:hover { background-color: #f1d9a4; }
+.suit-hwmon-btn-update:active { background-color: #e3bf78; }
